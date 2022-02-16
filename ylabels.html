@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300, "strokeOpacity": 0}, "concat": {"spacing": 0}}, "concat": [{"data": {"name": "data-3c7c4cf0c658b11a1ee3176ae8aa7843"}, "mark": "image", "encoding": {"url": {"type": "nominal", "field": "yAxis"}, "y": {"type": "ordinal", "axis": {"domainOpacity": 0, "labels": false, "ticks": false, "title": null}, "field": "name"}}, "height": 800, "width": 150}, {"data": {"name": "data-71c1598040a70bbc0369fff50cf163fb"}, "mark": {"type": "point", "filled": true, "size": 150}, "encoding": {"color": {"type": "quantitative", "field": "tpsa"}, "tooltip": [{"type": "nominal", "field": "image"}], "x": {"type": "quantitative", "field": "potency", "scale": {"zero": false}}, "y": {"type": "ordinal", "axis": {"domain": false, "grid": true, "labels": true, "ticks": true}, "field": "name"}}, "height": 800, "width": 500}], "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-3c7c4cf0c658b11a1ee3176ae8aa7843": [{"name": "6X1", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/08B.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/6X1.png", "potency": 4.062533862241858}, {"name": "27Z", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/5Q4.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/27Z.png", "potency": 7.261314929445005}, {"name": "O74", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/75L.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/O74.png", "potency": 4.214898588897095}, {"name": "5Q4", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/AO5.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/5Q4.png", "potency": 7.305615391163596}, {"name": "863", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/ZSY.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/863.png", "potency": 8.801642159113648}, {"name": "P4Y", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/S11.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/P4Y.png", "potency": 6.759022996737801}, {"name": "QZ3", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/N87.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/QZ3.png", "potency": 7.7377837758113515}, {"name": "6RB", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/TH8.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/6RB.png", "potency": 8.611711377369735}, {"name": "RKH", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/SWV.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/RKH.png", "potency": 5.145136256372915}, {"name": "NNR", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/0LB.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/NNR.png", "potency": 7.938048156779006}], "data-71c1598040a70bbc0369fff50cf163fb": [{"name": "6X1", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/08B.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/6X1.png", "potency": 4.062533862241858, "tpsa": 78.43}, {"name": "27Z", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/5Q4.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/27Z.png", "potency": 7.261314929445005, "tpsa": 190.81}, {"name": "O74", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/75L.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/O74.png", "potency": 4.214898588897095, "tpsa": 53.49}, {"name": "5Q4", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/AO5.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/5Q4.png", "potency": 7.305615391163596, "tpsa": 89.69999999999999}, {"name": "863", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/ZSY.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/863.png", "potency": 8.801642159113648, "tpsa": 51.13}, {"name": "P4Y", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/S11.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/P4Y.png", "potency": 6.759022996737801, "tpsa": 119.33}, {"name": "QZ3", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/N87.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/QZ3.png", "potency": 7.7377837758113515, "tpsa": 124.09}, {"name": "6RB", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/TH8.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/6RB.png", "potency": 8.611711377369735, "tpsa": 79.62}, {"name": "RKH", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/SWV.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/RKH.png", "potency": 5.145136256372915, "tpsa": 78.07}, {"name": "NNR", "image": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/0LB.png", "yAxis": "https://raw.githubusercontent.com/ljmartin/altair_mols/master/imgs/NNR.png", "potency": 7.938048156779006, "tpsa": 116.89}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
